@@ -1,4 +1,6 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 /**
  * The main function receives the arguments from the shell call.
@@ -8,7 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-	fprintf(stdout, "Hello, World!\n");
+	cout << "Hello, World!" << endl;
 
 	/* Returning 0 is a sign of successful execution. */
 	return 0;
