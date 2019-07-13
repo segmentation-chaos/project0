@@ -1,4 +1,4 @@
-CFLAGS=-Wall
+CPPFLAGS=-Wall
 
 TARGETS=main
 
