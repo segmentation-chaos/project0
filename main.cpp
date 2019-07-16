@@ -1,6 +1,4 @@
-#include <iostream>
-
-using namespace std;
+#include "custom_printer.hpp"
 
 /**
  * The main function receives the arguments from the shell call.
@@ -10,7 +8,9 @@ using namespace std;
  */
 int main(int argc, char **argv)
 {
-	cout << "Hello, World!" << endl;
+	Custom_Printer cp;
+
+	cp.custom_print(0);
 
 	/* Returning 0 is a sign of successful execution. */
 	return 0;
