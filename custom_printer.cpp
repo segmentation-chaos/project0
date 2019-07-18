@@ -7,6 +7,8 @@ Custom_Printer::Custom_Printer()
 	printers.push_back(print_hello);
 	printers.push_back(print_goodbye);
 	printers.push_back(print_pedro);
+	printers.push_back(print_geovane);
+
 }
 
 Custom_Printer::Custom_Printer(const Custom_Printer &other)
@@ -80,6 +82,13 @@ int Custom_Printer::print_pedro()
 		cout << (char) (33 + rand() % 95);
 	}
 	cout << endl;
+
+	return 0;
+}
+
+int Custom_Printer::print_geovane()
+{
+	cout << "Não me segue que to perdido!" << endl;
 
 	return 0;
 }
