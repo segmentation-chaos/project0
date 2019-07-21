@@ -26,6 +26,7 @@ class Custom_Printer
 
 		static int print_hello();
 		static int print_goodbye();
+		static int print_david();
 };
 
 #endif

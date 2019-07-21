@@ -6,6 +6,7 @@ Custom_Printer::Custom_Printer()
 {
 	printers.push_back(print_hello);
 	printers.push_back(print_goodbye);
+	printers.push_back(print_david);
 }
 
 Custom_Printer::Custom_Printer(const Custom_Printer &other)
@@ -61,6 +62,13 @@ int Custom_Printer::print_hello()
 int Custom_Printer::print_goodbye()
 {
 	cout << "Goodbye, World!" << endl;
+
+	return 0;
+}
+ 
+int Custom_Printer::print_david()
+{
+	cout << "\'Estar vivo parece siempre el precio de algo.\' (JC)." << endl;
 
 	return 0;
 }
