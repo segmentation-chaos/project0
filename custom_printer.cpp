@@ -6,6 +6,7 @@ Custom_Printer::Custom_Printer()
 {
 	printers.push_back(print_hello);
 	printers.push_back(print_goodbye);
+	printers.push_back(print_vitor);
 }
 
 Custom_Printer::Custom_Printer(const Custom_Printer &other)
@@ -61,6 +62,15 @@ int Custom_Printer::print_hello()
 int Custom_Printer::print_goodbye()
 {
 	cout << "Goodbye, World!" << endl;
+
+	return 0;
+}
+
+int Custom_Printer::print_vitor()
+{
+//	cout << "This is 007 speaking. This is an open line. It's an emergency. Can you hear me? Pass this at once. 3030 was a double, working for Redland. Yes, dammit, I said was. The bitch is dead now." << endl;
+
+	cout << "I’m sorry, but you don’t understand. These are robots -- and that means they are reasoning beings. They recognize the Master, now that I have preached Truth to them. All the robots do. They call me the prophet." << endl;
 
 	return 0;
 }
