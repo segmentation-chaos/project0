@@ -1,6 +1,9 @@
 #ifndef CUSTOM_PRINT_H
 #define CUSTOM_PRINT_H
 
+#include <cstdlib>
+#include <ctime>
+
 #include <iostream>
 #include <vector>
 
@@ -26,6 +29,7 @@ class Custom_Printer
 
 		static int print_hello();
 		static int print_goodbye();
+		static int print_pedro();
 };
 
 #endif
