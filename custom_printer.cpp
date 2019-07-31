@@ -68,6 +68,13 @@ int Custom_Printer::print_goodbye()
 	return 0;
 }
 
+int Custom_Printer::print_geovane()
+{
+	cout << "Não me segue que to perdido!" << endl;
+
+	return 0;
+}
+
 int Custom_Printer::print_pedro()
 {
 	/**
