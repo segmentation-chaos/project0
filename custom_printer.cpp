@@ -7,6 +7,7 @@ Custom_Printer::Custom_Printer()
 	printers.push_back(print_hello);
 	printers.push_back(print_goodbye);
 	printers.push_back(print_david);
+	printers.push_back(print_pedro);
 }
 
 Custom_Printer::Custom_Printer(const Custom_Printer &other)
@@ -69,6 +70,24 @@ int Custom_Printer::print_goodbye()
 int Custom_Printer::print_david()
 {
 	cout << "\'Estar vivo parece siempre el precio de algo.\' (JC)." << endl;
+  
+  return 0;
+}
+
+int Custom_Printer::print_pedro()
+{
+	/**
+	 * Prints random characters a random number of times.
+	 * Note that the modulo operation does not give a uniform distribution.
+	 * Also, char implementation varies, which could result in non printable
+	 * characters.
+	 */
+	srand(time(NULL));
+	for(int i = 0; i < 1 + rand() % 80; i++)
+	{
+		cout << (char) (33 + rand() % 95);
+	}
+	cout << endl;
 
 	return 0;
 }
