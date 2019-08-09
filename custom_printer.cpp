@@ -9,7 +9,7 @@ Custom_Printer::Custom_Printer()
 	printers.push_back(print_david);
 	printers.push_back(print_pedro);
 	printers.push_back(print_jean);
-  printers.push_back(print_geovane);
+  	printers.push_back(print_geovane);
 }
 
 Custom_Printer::Custom_Printer(const Custom_Printer &other)
