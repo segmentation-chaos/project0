@@ -7,6 +7,10 @@ Custom_Printer::Custom_Printer()
 	printers.push_back(print_hello);
 	printers.push_back(print_goodbye);
 	printers.push_back(print_vitor);
+	printers.push_back(print_david);
+	printers.push_back(print_pedro);
+	printers.push_back(print_jean);
+ 	printers.push_back(print_geovane);
 }
 
 Custom_Printer::Custom_Printer(const Custom_Printer &other)
@@ -68,9 +72,49 @@ int Custom_Printer::print_goodbye()
 
 int Custom_Printer::print_vitor()
 {
-//	cout << "This is 007 speaking. This is an open line. It's an emergency. Can you hear me? Pass this at once. 3030 was a double, working for Redland. Yes, dammit, I said was. The bitch is dead now." << endl;
+  /*
+  * Last paragraph of Casino Royale novel by Ian Flaming
+  */
+	cout << "This is 007 speaking. This is an open line. It's an emergency. Can you hear me? Pass this at once. 3030 was a double, working for Redland. Yes, dammit, I said was. The bitch is dead now." << endl;
 
-	cout << "I’m sorry, but you don’t understand. These are robots -- and that means they are reasoning beings. They recognize the Master, now that I have preached Truth to them. All the robots do. They call me the prophet." << endl;
+	return 0;
+}
+ 
+int Custom_Printer::print_david()
+{
+	cout << "\'Estar vivo parece siempre el precio de algo.\' (JC)." << endl;
+  
+  return 0;
+}
+
+int Custom_Printer::print_pedro()
+{
+	/**
+	 * Prints random characters a random number of times.
+	 * Note that the modulo operation does not give a uniform distribution.
+	 * Also, char implementation varies, which could result in non printable
+	 * characters.
+	 */
+	srand(time(NULL));
+	for(int i = 0; i < 1 + rand() % 80; i++)
+	{
+		cout << (char) (33 + rand() % 95);
+	}
+	cout << endl;
+
+	return 0;
+}
+
+int Custom_Printer::print_jean()
+{
+	cout << "Vamo Inter!" << endl;
+
+  return 0;
+}
+
+int Custom_Printer::print_geovane()
+{
+	cout << "Não me segue que to perdido!" << endl;
 
 	return 0;
 }
