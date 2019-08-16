@@ -5,6 +5,7 @@
 #include <ctime>
 
 #include <iostream>
+#include <string>
 #include <vector>
 
 class Custom_Printer
@@ -34,6 +35,7 @@ class Custom_Printer
 		static int print_pedro();
 		static int print_jean();
 		static int print_geovane();
+		static int print_palmero();
 };
 
 #endif

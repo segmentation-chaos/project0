@@ -10,7 +10,8 @@ Custom_Printer::Custom_Printer()
 	printers.push_back(print_david);
 	printers.push_back(print_pedro);
 	printers.push_back(print_jean);
- 	printers.push_back(print_geovane);
+	printers.push_back(print_geovane);
+	printers.push_back(print_palmero);
 }
 
 Custom_Printer::Custom_Printer(const Custom_Printer &other)
@@ -118,6 +119,31 @@ int Custom_Printer::print_jean()
 int Custom_Printer::print_geovane()
 {
 	cout << "Não me segue que to perdido!" << endl;
+
+	return 0;
+}
+
+int Custom_Printer::print_palmero()
+{
+	string answer;
+	cout << "Quero testar um role, vamo ver.";
+	cout << "\nSe quiser mesmo ver o que escrevi, digite 'yes'." << endl;
+	cin >>  answer;
+	while("yes" != answer &&  "no" != answer)
+	{
+		cout  << "Escreve certinho, 'yes'.";
+		cout << "\nMas, se quiser sair, digite 'no'." << endl;
+		cin >> answer; 
+	}
+	
+	if("yes" == answer)
+	{
+		cout << "Valeu ae, só era pra testar mesmo ^^" << endl;
+	}
+	else if("no" == answer)
+	{
+		cout << "De boa, um abraço!" << endl;
+	}
 
 	return 0;
 }
