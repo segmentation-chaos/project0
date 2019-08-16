@@ -6,10 +6,11 @@ Custom_Printer::Custom_Printer()
 {
 	printers.push_back(print_hello);
 	printers.push_back(print_goodbye);
+	printers.push_back(print_vitor);
 	printers.push_back(print_david);
 	printers.push_back(print_pedro);
 	printers.push_back(print_jean);
-  	printers.push_back(print_geovane);
+ 	printers.push_back(print_geovane);
 }
 
 Custom_Printer::Custom_Printer(const Custom_Printer &other)
@@ -68,12 +69,25 @@ int Custom_Printer::print_goodbye()
 
 	return 0;
 }
+
+int Custom_Printer::print_vitor()
+{
+  /*
+  * Last paragraph of Casino Royale novel by Ian Flaming
+  */
+	cout << "This is 007 speaking. This is an open line. It's an emergency.";
+	cout << "Can you hear me? Pass this at once.";
+	cout << "3030 was a double, working for Redland.";
+	cout << "Yes, dammit, I said was. The bitch is dead now." << endl;
+	
+	return 0;
+}
  
 int Custom_Printer::print_david()
 {
 	cout << "\'Estar vivo parece siempre el precio de algo.\' (JC)." << endl;
   
-  return 0;
+ 	return 0;
 }
 
 int Custom_Printer::print_pedro()
@@ -98,7 +112,7 @@ int Custom_Printer::print_jean()
 {
 	cout << "Vamo Inter!" << endl;
 
-  return 0;
+	return 0;
 }
 
 int Custom_Printer::print_geovane()
