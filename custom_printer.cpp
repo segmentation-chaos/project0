@@ -73,13 +73,7 @@ int Custom_Printer::print_goodbye()
 
 int Custom_Printer::print_vitor()
 {
-  /*
-  * Last paragraph of Casino Royale novel by Ian Flaming
-  */
-	cout << "This is 007 speaking. This is an open line. It's an emergency.";
-	cout << "Can you hear me? Pass this at once.";
-	cout << "3030 was a double, working for Redland.";
-	cout << "Yes, dammit, I said was. The bitch is dead now." << endl;
+	cout << "Mate wins the game." << endl;
 	
 	return 0;
 }
